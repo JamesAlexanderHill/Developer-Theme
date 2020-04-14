@@ -1,0 +1,105 @@
+/* line 1, styles.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 6, styles.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia", Times, serif;
+}
+
+/* line 27, styles.scss */
+p {
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+}
+
+/* line 30, styles.scss */
+a {
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+}
+
+/*sidebar nav*/
+/* line 34, styles.scss */
+#side-nav {
+  display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow-x: hidden;
+  padding-top: 10px;
+  transition: 0.5s;
+}
+/* line 46, styles.scss */
+#side-nav li {
+  text-align: center;
+  padding: 5px 0px;
+}
+/* line 49, styles.scss */
+#side-nav li a {
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+}
+
+/* line 55, styles.scss */
+#container {
+  transition: margin-left .5s;
+  min-width: 100vw;
+}
+/* line 58, styles.scss */
+#container header {
+  color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  /*blue shadow*/
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(128, 216, 247, 0.2);
+  -moz-box-shadow: 0px 4px 6px 0px rgba(128, 216, 247, 0.2);
+  box-shadow: 0px 4px 6px 0px rgba(128, 216, 247, 0.2);
+}
+/* line 63, styles.scss */
+#container header div {
+  color: inherit;
+  padding: 10px;
+  font-size: 25px;
+}
+/* line 67, styles.scss */
+#container header div button {
+  font-size: inherit;
+}
+/* line 75, styles.scss */
+#container header #main-nav {
+  display: none;
+}
+/* line 80, styles.scss */
+#container main {
+  padding: 50px 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  /*sidebar nav*/
+  /* line 86, styles.scss */
+  #side-nav, #container header #navToggleBtnContainer, #container header #downloadBtnContainer {
+    display: none;
+  }
+
+  /* line 91, styles.scss */
+  #container header #main-nav {
+    display: block;
+  }
+  /* line 93, styles.scss */
+  #container header #main-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  /* line 99, styles.scss */
+  #container header #main-nav ul li a {
+    padding: 10px;
+  }
+}

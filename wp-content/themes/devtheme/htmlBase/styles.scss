@@ -1,0 +1,107 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Georgia", Times, serif;
+}
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+h4{
+
+}
+h5{
+
+}
+h6{
+
+}
+p{
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+}
+a{
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+}
+/*sidebar nav*/
+#side-nav{
+  display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.85);
+  overflow-x: hidden;
+  padding-top: 10px;
+  transition: 0.5s;
+  li{
+    text-align: center;
+    padding: 5px 0px;
+    a{
+      color: rgba(255,255,255,0.5);
+      white-space: nowrap
+    }
+  }
+}
+#container{
+  transition: margin-left .5s;
+  min-width: 100vw;
+  header{
+    color: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    div{
+      color: inherit;
+      padding: 10px;
+      font-size: 25px;
+      button{
+        font-size: inherit;
+      }
+    }
+    /*blue shadow*/
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(128,216,247,0.2);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(128,216,247,0.2);
+    box-shadow: 0px 4px 6px 0px rgba(128,216,247,0.2);
+    #main-nav{
+      display: none;
+
+    }
+  }
+  main{
+    padding: 50px 10px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /*sidebar nav*/
+  #side-nav, #container header #navToggleBtnContainer, #container header #downloadBtnContainer{
+    display: none;
+  }
+  #container{
+    header{
+      #main-nav{
+        display: block;
+        ul{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          li{
+            a{
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
