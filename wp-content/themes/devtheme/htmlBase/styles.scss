@@ -1,3 +1,16 @@
+/*colors*/
+:root {
+  --cat-chrome: #3474E0;
+  --cat-reactjs: #80D8F7;
+  --cat-wordpress: #2e90a6;
+  --cat-electron: #2b2e3b;/*#9feaf9*/
+  --cat-ai: #321a5c;
+  --cat-api: #55ba6d;
+  --cat-unity: #ffffff;
+  --cat-python: #ffe58f;
+  --cat-raspberry-pi: #c51d4a;
+}
+/*styles*/
 *{
   margin: 0px;
   padding: 0px;
@@ -5,12 +18,17 @@
 
 h1, h2, h3, h4, h5, h6{
   font-family: "Georgia", Times, serif;
+  text-align: center;
 }
 h1{
-
+  font-size: 30px;
+  color: rgba(0,0,0,0.85);
+  font-weight: 400;
 }
 h2{
-
+  font-size: 20px;
+  color: rgba(0,0,0,0.85);
+  font-weight: 400;
 }
 h3{
 
@@ -78,9 +96,97 @@ a{
     }
   }
   main{
-    padding: 50px 10px;
+    section{
+      margin: 50px 0px;
+    }
   }
 }
+
+/*single elements*/
+#category-list{
+  margin: 50px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  .category-item{
+
+    a{
+      border-radius: 10px;
+      margin: 5px;
+      background-color: rgb(242,242,242);
+      font-size: 10px;
+      padding: 5px;
+      display:flex;
+      .cat-name{
+        padding: 0px 5px;
+        color: rgba(0,0,0,0.5);
+      }
+      .ci{
+        font-size: 12px;
+      }
+    }
+    /*Category Default*/
+    .cat.active, .cat:active{//if it also has an active class
+      background-color: rgba(0,0,0,0.85);
+      box-shadow: 0px 0px 5px 5px #f5f5f5;
+      span::before{
+        color: white;
+      }
+      .cat-name{
+        color: rgba(255,255,255,0.5);
+      }
+    }
+    /*Google Chrome color*/
+    .color-chrome.active, .color-chrome:active{
+      background-color: var(--cat-chrome);
+    }
+    /*ReactJS color*/
+    .color-reactjs.active, .color-reactjs:active{
+      background-color: var(--cat-reactjs);
+      .cat-name{
+        color: rgba(0,0,0,0.5);
+      }
+    }
+    /*Wordpress color*/
+    .color-wordpress.active, .color-wordpress:active{
+      background-color: var(--cat-wordpress);
+    }
+    /*AI color*/
+    .color-ai.active, .color-ai:active{
+      background-color: var(--cat-ai);
+    }
+    /*Electron color*/
+    .color-electron.active, .color-electron:active{
+      background-color: var(--cat-electron);
+    }
+    /*API color*/
+    .color-api.active, .color-api:active{
+      background-color: var(--cat-api);
+    }
+    /*AI color*/
+    .color-unity.active, .color-unity:active{
+      background-color: var(--cat-unity);
+      .cat-name{
+        color: rgba(0,0,0,0.5);
+      }
+    }
+    /*python color*/
+    .color-python.active, .color-python:active{
+      background-color: var(--cat-python);
+      .cat-name{
+        color: rgba(0,0,0,0.5);
+      }
+    }
+    /*raspberry-pi color*/
+    .color-raspberry-pi.active, .color-raspberry-pi:active{
+      background-color: var(--cat-raspberry-pi);
+    }
+  }
+}
+
 @media only screen and (min-width: 600px) {
   /*sidebar nav*/
   #side-nav, #container header #navToggleBtnContainer, #container header #downloadBtnContainer{

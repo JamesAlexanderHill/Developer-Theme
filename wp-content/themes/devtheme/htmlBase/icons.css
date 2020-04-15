@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'custom-icons';
+  src:  url('fonts/custom-icons.eot?2j4j82');
+  src:  url('fonts/custom-icons.eot?2j4j82#iefix') format('embedded-opentype'),
+    url('fonts/custom-icons.ttf?2j4j82') format('truetype'),
+    url('fonts/custom-icons.woff?2j4j82') format('woff'),
+    url('fonts/custom-icons.svg?2j4j82#custom-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'custom-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chrome-color .path1:before {
+  content: "\e900";
+  color: rgb(207, 90, 74);
+}
+.icon-chrome-color .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(86, 138, 237);
+}
+.icon-chrome-color .path3:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(248, 207, 96);
+}
+.icon-chrome-color .path4:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(102, 158, 77);
+}
+.icon-reactjs-color:before {
+  content: "\e904";
+  color: #80d8f7;
+}
+.icon-chrome:before {
+  content: "\e905";
+}
+.icon-reactjs:before {
+  content: "\e906";
+}
