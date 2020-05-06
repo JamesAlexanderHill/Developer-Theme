@@ -22,7 +22,7 @@
         <?php
         wp_nav_menu(
           array(
-            'theme_location' => 'main-menu',
+            'theme_location' => 'social-menu',
             'container' => 'nav',
             'container_id' => 'social-nav',
             'fallback_cb' => false
