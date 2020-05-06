@@ -18,7 +18,8 @@
 
 h1, h2, h3, h4, h5, h6{
   font-family: "Georgia", Times, serif;
-  text-align: center;
+  text-align: left;
+  margin: 30px 0px 10px 0px;
 }
 h1{
   font-size: 30px;
@@ -26,9 +27,10 @@ h1{
   font-weight: 400;
 }
 h2{
+  font-family: "Lucida Grande", Helvetica, sans-serif;
   font-size: 20px;
   color: rgba(0,0,0,0.85);
-  font-weight: 400;
+  font-weight: bold;
 }
 h3{
 
@@ -43,10 +45,21 @@ h6{
 
 }
 p{
+  font-size: 14px;
   font-family: "Lucida Grande", Helvetica, sans-serif;
 }
 a{
   font-family: "Lucida Grande", Helvetica, sans-serif;
+}
+.subtitle{
+  font-size: 20px;
+  color: rgba(0,0,0,0.5);
+}
+.page-width{
+  padding: 0px 0px;
+}
+.content-width{
+  max-width: 100%;
 }
 /*sidebar nav*/
 #side-nav{
@@ -62,11 +75,16 @@ a{
   padding-top: 10px;
   transition: 0.5s;
   li{
+    list-style-type: none;
     text-align: center;
     padding: 5px 0px;
     a{
+      text-decoration: none;
       color: rgba(255,255,255,0.5);
-      white-space: nowrap
+      white-space: nowrap;
+      &:hover{
+        color: rgba(255,255,255,1);
+      }
     }
   }
 }
@@ -74,6 +92,9 @@ a{
   transition: margin-left .5s;
   min-width: 100vw;
   header{
+    background-color: rgb(255,255,255);
+    position: fixed;
+    width: 100%;
     color: rgba(0,0,0,0.85);
     display: flex;
     justify-content: space-between;
@@ -84,6 +105,7 @@ a{
       font-size: 25px;
       button{
         font-size: inherit;
+        border: none;
       }
     }
     /*blue shadow*/
@@ -92,19 +114,44 @@ a{
     box-shadow: 0px 4px 6px 0px rgba(128,216,247,0.2);
     #main-nav{
       display: none;
-
     }
   }
-  main{
-    section{
-      margin: 50px 0px;
+  footer{
+    min-height: 50px;
+    background-color: rgba(0,0,0,0.85);
+    color: rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    #footer-nav{
+      display: none;
+    }
+    #social-nav{
+      width: 100%;
+      ul{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        li{
+          list-style-type: none;
+          a{
+            color: inherit;
+            padding: 10px;
+            &:hover{
+              color: rgba(255,255,255,1);
+            }
+          }
+        }
+      }
     }
   }
 }
 
 /*single elements*/
+
 #category-list{
-  margin: 50px 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -187,14 +234,44 @@ a{
     }
   }
 }
-
+#content{
+  padding: 100px 0px;
+  section{
+    padding: 10px 0px;
+    margin: 0px 20px;
+  }
+}
 @media only screen and (min-width: 600px) {
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  p{
+    font-size: 18px;
+  }
+  .subtitle{
+    font-size: 24px;
+    color: rgba(0,0,0,0.5);
+  }
+  .page-width{
+    padding: 0px 16px;
+  }
+  .content-width{
+    max-width: 550px;
+    margin: auto!important;
+  }
+  #content{
+
+  }
   /*sidebar nav*/
   #side-nav, #container header #navToggleBtnContainer, #container header #downloadBtnContainer{
     display: none;
   }
   #container{
     header{
+      width: calc(100% - 32px);//double page with padding
       #main-nav{
         display: block;
         ul{
@@ -203,12 +280,59 @@ a{
           align-items: center;
           height: 100%;
           li{
+            list-style-type: none;
             a{
+              text-decoration: none;
+              color: inherit;
               padding: 10px;
             }
           }
         }
       }
     }
+    footer{
+      min-height: 100px;
+      #footer-nav{
+        display: block;
+        ul{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          li{
+            list-style-type: none;
+            a{
+              text-decoration: none;
+              color: inherit;
+              font-size: 14px;
+              padding: 10px;
+              white-space: nowrap;
+              &:hover{
+                color: rgba(255,255,255,1);
+              }
+            }
+          }
+        }
+      }
+      #social-nav{
+        width: auto;
+        ul{
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 800px) {
+  .page-width{
+    padding: 0px 100px;
+  }
+  #container{
+    header{
+      width: calc(100% - 200px);//double page with padding
+    }
+  }
+  .content-width{
+    max-width: 750px;
   }
 }
