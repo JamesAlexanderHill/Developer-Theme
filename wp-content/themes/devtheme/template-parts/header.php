@@ -5,7 +5,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
-    <script src="https://kit.fontawesome.com/037b8e2be6.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/037b8e2be6.js" crossorigin="anonymous"></script> -->
   </head>
   <body <?php body_class(); ?>>
     <nav id="side-nav">
