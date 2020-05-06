@@ -16,7 +16,15 @@
         <li><a href="#">Dev-Notes</a></li>
         <li><a href="#">Contact</a></li>
       </ul> -->
-      <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+      <?php
+      wp_nav_menu(
+        array(
+          'theme_location' => 'main-menu',
+          'theme_location' => '__no_such_location',
+          'fallback_cb' => false
+        )
+      );
+      ?>
     </nav>
     <div id="container">
       <header class="page-width">
@@ -30,7 +38,15 @@
             <li><a href="#">Dev-Notes</a></li>
             <li><a href="#">Contact</a></li>
           </ul> -->
-          <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+          <?php
+          wp_nav_menu(
+            array(
+              'theme_location' => 'main-menu',
+              'theme_location' => '__no_such_location',
+              'fallback_cb' => false
+            )
+          );
+          ?>
         </nav>
         <div id="downloadBtnContainer"><i class="fas fa-file-download"></i></div>
       </header>
