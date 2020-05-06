@@ -24,7 +24,7 @@
           array(
             'theme_location' => 'main-menu',
             'container' => 'nav',
-            'container_id' => 'main-nav',
+            'container_id' => 'social-nav',
             'fallback_cb' => false
           )
         );
