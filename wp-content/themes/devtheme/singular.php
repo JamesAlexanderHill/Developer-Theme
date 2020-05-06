@@ -1,4 +1,4 @@
-<!-- start index.php -->
+<!-- start singular.php -->
 <?php
 get_template_part( 'template-parts/header', '' );
 
@@ -13,4 +13,4 @@ endif;
 
 get_template_part( 'template-parts/footer', '' );
 ?>
-<!-- end index.php -->
+<!-- end singular.php -->
