@@ -6,3 +6,413 @@ Author URI: https://jameshill.xyz
 Description: A custom theme for jameshill.xyz.
 Version: 0.1.0
 */
+/*colors*/
+/* line 2, styles.scss */
+:root {
+  --cat-chrome: #3474E0;
+  --cat-reactjs: #80D8F7;
+  --cat-wordpress: #2e90a6;
+  --cat-electron: #2b2e3b;
+  /*#9feaf9*/
+  --cat-ai: #321a5c;
+  --cat-api: #55ba6d;
+  --cat-unity: #ffffff;
+  --cat-python: #fce28c;
+  --cat-raspberry-pi: #c51d4a;
+}
+
+/*styles*/
+/* line 14, styles.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 19, styles.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia", Times, serif;
+  text-align: left;
+  margin: 30px 0px 10px 0px;
+}
+
+/* line 24, styles.scss */
+h1 {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 400;
+}
+
+/* line 29, styles.scss */
+h2 {
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: bold;
+}
+
+/* line 47, styles.scss */
+p {
+  font-size: 14px;
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+}
+
+/* line 51, styles.scss */
+a {
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+}
+
+/* line 54, styles.scss */
+.subtitle {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 58, styles.scss */
+.page-width {
+  padding: 0px 0px;
+}
+
+/* line 61, styles.scss */
+.content-width {
+  max-width: 100%;
+}
+
+/*sidebar nav*/
+/* line 65, styles.scss */
+#side-nav {
+  display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow-x: hidden;
+  padding-top: 10px;
+  transition: 0.5s;
+}
+/* line 77, styles.scss */
+#side-nav li {
+  list-style-type: none;
+  text-align: center;
+  padding: 5px 0px;
+}
+/* line 81, styles.scss */
+#side-nav li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+}
+/* line 85, styles.scss */
+#side-nav li a:hover {
+  color: white;
+}
+
+/* line 91, styles.scss */
+#container {
+  transition: margin-left .5s;
+  min-width: 100vw;
+}
+/* line 94, styles.scss */
+#container header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  /*blue shadow*/
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(128, 216, 247, 0.2);
+  -moz-box-shadow: 0px 4px 6px 0px rgba(128, 216, 247, 0.2);
+  box-shadow: 0px 4px 6px 0px rgba(128, 216, 247, 0.2);
+}
+/* line 102, styles.scss */
+#container header div {
+  color: inherit;
+  padding: 10px;
+  font-size: 25px;
+}
+/* line 106, styles.scss */
+#container header div button {
+  font-size: inherit;
+  border: none;
+}
+/* line 115, styles.scss */
+#container header #main-nav {
+  display: none;
+}
+/* line 119, styles.scss */
+#container footer {
+  min-height: 50px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+/* line 126, styles.scss */
+#container footer #footer-nav {
+  display: none;
+}
+/* line 129, styles.scss */
+#container footer #social-nav {
+  width: 100%;
+}
+/* line 131, styles.scss */
+#container footer #social-nav ul {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+/* line 137, styles.scss */
+#container footer #social-nav ul li {
+  list-style-type: none;
+}
+/* line 139, styles.scss */
+#container footer #social-nav ul li a {
+  color: inherit;
+  padding: 10px;
+}
+/* line 142, styles.scss */
+#container footer #social-nav ul li a:hover {
+  color: white;
+}
+
+/*single elements*/
+/* line 154, styles.scss */
+#category-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+/* line 161, styles.scss */
+#category-list .category-item {
+  /*Category Default*/
+  /*Google Chrome color*/
+  /*ReactJS color*/
+  /*Wordpress color*/
+  /*AI color*/
+  /*Electron color*/
+  /*API color*/
+  /*AI color*/
+  /*python color*/
+  /*raspberry-pi color*/
+}
+/* line 163, styles.scss */
+#category-list .category-item a {
+  border-radius: 10px;
+  margin: 5px;
+  background-color: #f2f2f2;
+  font-size: 10px;
+  padding: 5px;
+  display: flex;
+}
+/* line 170, styles.scss */
+#category-list .category-item a .cat-name {
+  padding: 0px 5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 174, styles.scss */
+#category-list .category-item a .ci {
+  font-size: 12px;
+}
+/* line 179, styles.scss */
+#category-list .category-item .cat.active, #category-list .category-item .cat:active {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0px 0px 5px 5px #f5f5f5;
+}
+/* line 182, styles.scss */
+#category-list .category-item .cat.active span::before, #category-list .category-item .cat:active span::before {
+  color: white;
+}
+/* line 185, styles.scss */
+#category-list .category-item .cat.active .cat-name, #category-list .category-item .cat:active .cat-name {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 190, styles.scss */
+#category-list .category-item .color-chrome.active, #category-list .category-item .color-chrome:active {
+  background-color: var(--cat-chrome);
+}
+/* line 194, styles.scss */
+#category-list .category-item .color-reactjs.active, #category-list .category-item .color-reactjs:active {
+  background-color: var(--cat-reactjs);
+}
+/* line 196, styles.scss */
+#category-list .category-item .color-reactjs.active .cat-name, #category-list .category-item .color-reactjs:active .cat-name {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 201, styles.scss */
+#category-list .category-item .color-wordpress.active, #category-list .category-item .color-wordpress:active {
+  background-color: var(--cat-wordpress);
+}
+/* line 205, styles.scss */
+#category-list .category-item .color-ai.active, #category-list .category-item .color-ai:active {
+  background-color: var(--cat-ai);
+}
+/* line 209, styles.scss */
+#category-list .category-item .color-electron.active, #category-list .category-item .color-electron:active {
+  background-color: var(--cat-electron);
+}
+/* line 213, styles.scss */
+#category-list .category-item .color-api.active, #category-list .category-item .color-api:active {
+  background-color: var(--cat-api);
+}
+/* line 217, styles.scss */
+#category-list .category-item .color-unity.active, #category-list .category-item .color-unity:active {
+  background-color: var(--cat-unity);
+}
+/* line 219, styles.scss */
+#category-list .category-item .color-unity.active .cat-name, #category-list .category-item .color-unity:active .cat-name {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 224, styles.scss */
+#category-list .category-item .color-python.active, #category-list .category-item .color-python:active {
+  background-color: var(--cat-python);
+}
+/* line 226, styles.scss */
+#category-list .category-item .color-python.active .cat-name, #category-list .category-item .color-python:active .cat-name {
+  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 232, styles.scss */
+#category-list .category-item .color-raspberry-pi.active, #category-list .category-item .color-raspberry-pi:active {
+  background-color: var(--cat-raspberry-pi);
+}
+
+/* line 237, styles.scss */
+#content {
+  padding: 100px 0px;
+}
+/* line 239, styles.scss */
+#content section {
+  padding: 10px 0px;
+  margin: 0px 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 245, styles.scss */
+  h1 {
+    font-size: 40px;
+  }
+
+  /* line 248, styles.scss */
+  h2 {
+    font-size: 30px;
+  }
+
+  /* line 251, styles.scss */
+  p {
+    font-size: 18px;
+  }
+
+  /* line 254, styles.scss */
+  .subtitle {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* line 258, styles.scss */
+  .page-width {
+    padding: 0px 16px;
+  }
+
+  /* line 261, styles.scss */
+  .content-width {
+    max-width: 550px;
+    margin: auto !important;
+  }
+
+  /*sidebar nav*/
+  /* line 269, styles.scss */
+  #side-nav, #container header #navToggleBtnContainer, #container header #downloadBtnContainer {
+    display: none;
+  }
+
+  /* line 273, styles.scss */
+  #container header {
+    width: calc(100% - 32px);
+  }
+  /* line 275, styles.scss */
+  #container header #main-nav {
+    display: block;
+  }
+  /* line 277, styles.scss */
+  #container header #main-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  /* line 282, styles.scss */
+  #container header #main-nav ul li {
+    list-style-type: none;
+  }
+  /* line 284, styles.scss */
+  #container header #main-nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+  }
+  /* line 293, styles.scss */
+  #container footer {
+    min-height: 100px;
+  }
+  /* line 295, styles.scss */
+  #container footer #footer-nav {
+    display: block;
+  }
+  /* line 297, styles.scss */
+  #container footer #footer-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  /* line 302, styles.scss */
+  #container footer #footer-nav ul li {
+    list-style-type: none;
+  }
+  /* line 304, styles.scss */
+  #container footer #footer-nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    padding: 10px;
+    white-space: nowrap;
+  }
+  /* line 310, styles.scss */
+  #container footer #footer-nav ul li a:hover {
+    color: white;
+  }
+  /* line 317, styles.scss */
+  #container footer #social-nav {
+    width: auto;
+  }
+  /* line 319, styles.scss */
+  #container footer #social-nav ul {
+    justify-content: flex-end;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /* line 327, styles.scss */
+  .page-width {
+    padding: 0px 100px;
+  }
+
+  /* line 331, styles.scss */
+  #container header {
+    width: calc(100% - 200px);
+  }
+
+  /* line 335, styles.scss */
+  .content-width {
+    max-width: 750px;
+  }
+}
