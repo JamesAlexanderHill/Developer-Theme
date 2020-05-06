@@ -41,9 +41,7 @@
           <?php
           wp_nav_menu(
             array(
-              'theme_location' => 'main-menu',
-              'theme_location' => '__no_such_location',
-              'fallback_cb' => false
+              'theme_location' => 'main-menu'
             )
           );
           ?>
