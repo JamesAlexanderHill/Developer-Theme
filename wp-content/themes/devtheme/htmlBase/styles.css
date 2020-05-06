@@ -9,7 +9,7 @@
   --cat-ai: #321a5c;
   --cat-api: #55ba6d;
   --cat-unity: #ffffff;
-  --cat-python: #ffe58f;
+  --cat-python: #fce28c;
   --cat-raspberry-pi: #c51d4a;
 }
 
@@ -209,31 +209,32 @@ a {
 /* line 179, styles.scss */
 #category-list .category-item .color-python.active .cat-name, #category-list .category-item .color-python:active .cat-name {
   color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
-/* line 184, styles.scss */
+/* line 185, styles.scss */
 #category-list .category-item .color-raspberry-pi.active, #category-list .category-item .color-raspberry-pi:active {
   background-color: var(--cat-raspberry-pi);
 }
 
 @media only screen and (min-width: 600px) {
   /*sidebar nav*/
-  /* line 192, styles.scss */
+  /* line 193, styles.scss */
   #side-nav, #container header #navToggleBtnContainer, #container header #downloadBtnContainer {
     display: none;
   }
 
-  /* line 197, styles.scss */
+  /* line 198, styles.scss */
   #container header #main-nav {
     display: block;
   }
-  /* line 199, styles.scss */
+  /* line 200, styles.scss */
   #container header #main-nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
   }
-  /* line 205, styles.scss */
+  /* line 206, styles.scss */
   #container header #main-nav ul li a {
     padding: 10px;
   }

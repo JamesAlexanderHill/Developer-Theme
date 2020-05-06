@@ -7,7 +7,7 @@
   --cat-ai: #321a5c;
   --cat-api: #55ba6d;
   --cat-unity: #ffffff;
-  --cat-python: #ffe58f;
+  --cat-python: #fce28c;
   --cat-raspberry-pi: #c51d4a;
 }
 /*styles*/
@@ -178,6 +178,7 @@ a{
       background-color: var(--cat-python);
       .cat-name{
         color: rgba(0,0,0,0.5);
+        color: rgba(255,255,255,0.8);
       }
     }
     /*raspberry-pi color*/
