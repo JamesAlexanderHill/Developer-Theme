@@ -7,7 +7,7 @@ if ( have_posts() ) :
     ?>
     <section class="content-width">
       <?php the_title( '<h1>', '</h1>' ); ?>
-      <p class="subtitle"><?php the_field('custom_title'); ?></p>
+      <p class="subtitle"><?php the_field('subtitle'); ?></p>
     </section>
     <section class="content-width">
       categories
