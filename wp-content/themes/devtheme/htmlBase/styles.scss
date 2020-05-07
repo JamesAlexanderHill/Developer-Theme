@@ -9,6 +9,7 @@
   --cat-unity: #ffffff;
   --cat-python: #fce28c;
   --cat-raspberry-pi: #c51d4a;
+  --cat-google-analytics: #d6792d;
 }
 /*styles*/
 *{
@@ -45,7 +46,7 @@ h6{
 
 }
 p{
-  margin: 10px;
+  margin: 10px 0px;
   font-size: 14px;
   font-family: "Lucida Grande", Helvetica, sans-serif;
 }
@@ -152,34 +153,121 @@ a{
 
 /*single elements*/
 
-#category-list{
+// #category-list{
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   list-style-type: none;
+//   padding: 0;
+//   .category-item{
+//
+//     a{
+//       border-radius: 10px;
+//       margin: 5px;
+//       background-color: rgb(242,242,242);
+//       font-size: 10px;
+//       padding: 5px;
+//       display:flex;
+//       .cat-name{
+//         padding: 0px 5px;
+//         color: rgba(0,0,0,0.5);
+//       }
+//       .ci{
+//         font-size: 12px;
+//       }
+//     }
+//     /*Category Default*/
+//     .cat.active, .cat:active{//if it also has an active class
+//       background-color: rgba(0,0,0,0.85);
+//       box-shadow: 0px 0px 5px 5px #f5f5f5;
+//       span::before{
+//         color: white;
+//       }
+//       .cat-name{
+//         color: rgba(255,255,255,0.5);
+//       }
+//     }
+//     /*Google Chrome color*/
+//     .color-chrome.active, .color-chrome:active{
+//       background-color: var(--cat-chrome);
+//     }
+//     /*ReactJS color*/
+//     .color-reactjs.active, .color-reactjs:active{
+//       background-color: var(--cat-reactjs);
+//       .cat-name{
+//         color: rgba(0,0,0,0.5);
+//       }
+//     }
+//     /*Wordpress color*/
+//     .color-wordpress.active, .color-wordpress:active{
+//       background-color: var(--cat-wordpress);
+//     }
+//     /*AI color*/
+//     .color-ai.active, .color-ai:active{
+//       background-color: var(--cat-ai);
+//     }
+//     /*Electron color*/
+//     .color-electron.active, .color-electron:active{
+//       background-color: var(--cat-electron);
+//     }
+//     /*API color*/
+//     .color-api.active, .color-api:active{
+//       background-color: var(--cat-api);
+//     }
+//     /*AI color*/
+//     .color-unity.active, .color-unity:active{
+//       background-color: var(--cat-unity);
+//       .cat-name{
+//         color: rgba(0,0,0,0.5);
+//       }
+//     }
+//     /*python color*/
+//     .color-python.active, .color-python:active{
+//       background-color: var(--cat-python);
+//       .cat-name{
+//         color: rgba(0,0,0,0.5);
+//         color: rgba(255,255,255,0.8);
+//       }
+//     }
+//     /*raspberry-pi color*/
+//     .color-raspberry-pi.active, .color-raspberry-pi:active{
+//       background-color: var(--cat-raspberry-pi);
+//     }
+//   }
+// }
+#post-category-list{
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   .category-item{
-
+    margin: 5px 0px;
     a{
+      text-decoration: none;
       border-radius: 10px;
       margin: 5px;
-      background-color: rgb(242,242,242);
       font-size: 10px;
       padding: 5px;
-      display:flex;
       .cat-name{
         padding: 0px 5px;
-        color: rgba(0,0,0,0.5);
       }
-      .ci{
-        font-size: 12px;
+      .cat-icon{
+        //tba
+      }
+      &:hover{
+        background-color: #f2f2f2;
+        .cat-name{
+          color: rgba(0,0,0,0.5);
+        }
       }
     }
     /*Category Default*/
-    .cat.active, .cat:active{//if it also has an active class
+    .cat{
       background-color: rgba(0,0,0,0.85);
-      box-shadow: 0px 0px 5px 5px #f5f5f5;
+      //box-shadow: 0px 0px 5px 5px rgba(128, 216, 247, 0.2);
       span::before{
         color: white;
       }
@@ -187,35 +275,40 @@ a{
         color: rgba(255,255,255,0.5);
       }
     }
+
     /*Google Chrome color*/
-    .color-chrome.active, .color-chrome:active{
+    .color-google-chrome-extension{
       background-color: var(--cat-chrome);
     }
+    /*Google Chrome color*/
+    .color-google-analytics{
+      background-color: var(--cat-google-analytics);
+    }
     /*ReactJS color*/
-    .color-reactjs.active, .color-reactjs:active{
+    .color-reactjs{
       background-color: var(--cat-reactjs);
       .cat-name{
         color: rgba(0,0,0,0.5);
       }
     }
     /*Wordpress color*/
-    .color-wordpress.active, .color-wordpress:active{
+    .color-wordpress{
       background-color: var(--cat-wordpress);
     }
     /*AI color*/
-    .color-ai.active, .color-ai:active{
+    .color-ai{
       background-color: var(--cat-ai);
     }
     /*Electron color*/
-    .color-electron.active, .color-electron:active{
+    .color-electron{
       background-color: var(--cat-electron);
     }
     /*API color*/
-    .color-api.active, .color-api:active{
+    .color-api{
       background-color: var(--cat-api);
     }
     /*AI color*/
-    .color-unity.active, .color-unity:active{
+    .color-unity{
       background-color: var(--cat-unity);
       .cat-name{
         color: rgba(0,0,0,0.5);

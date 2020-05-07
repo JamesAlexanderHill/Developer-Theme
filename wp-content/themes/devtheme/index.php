@@ -10,7 +10,14 @@ if ( have_posts() ) :
       <p class="subtitle"><?php the_field('subtitle'); ?></p>
     </section>
     <section class="content-width">
-      <?php the_category(', '); ?>
+      <?php
+      $cats = get_the_category();
+      ?>
+      <ul id="post-category-list">
+      <?php foreach($cats as $cat) {?>
+        <li class="category-item"><a href="#" class="cat color-<?php echo $cat->slug; ?>"><!--<img class="cat-icon" src="<?php echo get_template_directory_uri() . '/assets/img/' . $cat->slug . ".jpg" ?>">--><span class="cat-name"><?php echo $cat->name; ?></span></a></li>
+      <?php } ?>
+      </ul>
     </section>
     <section class="content-width">
       <?php the_content(); ?>
