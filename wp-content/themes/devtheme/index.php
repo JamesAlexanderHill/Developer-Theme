@@ -10,7 +10,7 @@ if ( have_posts() ) :
       <p class="subtitle"><?php the_field('subtitle'); ?></p>
     </section>
     <section class="content-width">
-      categories
+      <?php the_category(', '); ?>
     </section>
     <section class="content-width">
       <?php the_content(); ?>
